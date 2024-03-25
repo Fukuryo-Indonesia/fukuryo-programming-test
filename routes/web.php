@@ -17,11 +17,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [DashboardController::class, 'index']);
-
-Route::get('/masters/categories/get-all-data', [CategoryController::class, 'getAllData']);
-Route::post('/masters/categories/activated/{category}', [CategoryController::class, 'activated']);
-Route::resource('/masters/categories', CategoryController::class);
-
-Route::get('/masters/authors/get-all-data', [AuthorController::class, 'getAllData']);
-Route::post('/masters/authors/activated/{category}', [AuthorController::class, 'activated']);
-Route::resource('/masters/authors', AuthorController::class);
